@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wishlist</title>
     <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="wish.css">
 </head>
 
 <body>
@@ -28,110 +28,206 @@
 
     <main class="main container">
         <section class="main-section">
-            <body>
-                <section>
-                    <div class="try1">
-                        <h2>Wishlist (<span id="wishlist-count">4</span>)</h2>
-                        <button>Mover todo al carrito</button>
-                    </div>
-                    <div class="wishlist-items">
-                        <div class="item">
-                            <div class="image-container">
-                                <img src="img/guccibag.png" alt="Gucci duffle bag">
-                                <button>🗑</button>
-                                <button>Añadir al carrito</button>
-                            </div>
-                            <p>Gucci duffle bag</p>
-                            <p><strong>$1200</strong> <del>$1500</del></p>
+            <!-- Wishlist Section -->
+            <section class="wishlist-section">
+                <div class="section-header">
+                    <h2>Wishlist (<span id="wishlist-count">6</span>)</h2>
+                    <button class="move-all">Mover todo al carrito</button>
+                </div>
+                <ul class="wishlist-items">
+                    <!-- Repetir este bloque para cada producto -->
+                    <li class="product-card">
+                        <div class="image-container">
+                            <img src="img/zapas.png" alt="Zapatillas Running UltraLight">
                         </div>
-                        <div class="item">
-                            <div class="image-container">
-                                <img src="img/guccibag.png" alt="RGB liquid CPU cooler">
-                                <button>🗑</button>
-                                <button>Añadir al carrito</button>
-                            </div>
-                            <p>RGB liquid CPU cooler</p>
-                            <p><strong>$90</strong> <del>$120</del></p>
+                        <div class="button-group">
+                            <button class="delete-btn">🗑</button>
+                            <button class="add-btn">Añadir al carrito</button>
                         </div>
-                        <div class="item">
-                            <div class="image-container">
-                                <img src="img/guccibag.png" alt="Gucci duffle bag">
-                                <button>🗑</button>
-                                <button>Añadir al carrito</button>
-                            </div>
-                            <p>Gucci duffle bag</p>
-                            <p><strong>$1200</strong> <del>$1500</del></p>
+                        <div class="product-info">
+                            <h3 class="product-name">Zapatillas Running UltraLight</h3>
+                            <p class="product-price">
+                                <strong>$1200</strong>
+                                <del>$1500</del>
+                            </p>
                         </div>
-                        <div class="item">
-                            <div class="image-container">
-                                <img src="img/guccibag.png" alt="RGB liquid CPU cooler">
-                                <button>🗑</button>
-                                <button>Añadir al carrito</button>
-                            </div>
-                            <p>RGB liquid CPU cooler</p>
-                            <p><strong>$90</strong> <del>$120</del></p>
+                    </li>
+                    <!-- ...otros elementos li... -->
+                    <li class="product-card">
+                        <div class="image-container">
+                            <img src="img/cooler.jpeg" alt="RGB liquid CPU cooler">
                         </div>
-                    </div>
-                </section>
-            
-                <section>
-                    <div>
-                        <h2>Solo para ti</h2>
-                        <button>Mostrar todo</button>
-                    </div>
-                    <div class="recommended-items">
-                        <div class="item">
-                            <div class="image-container">
-                                <img src="img/guccibag.png" alt="GP11 Shooter USB gamepad">
-                                <button>🗑</button>
-                                <button>Añadir al carrito</button>
-                            </div>
-                            <p>GP11 Shooter USB gamepad</p>
-                            <p><strong>$40</strong> <del>$50</del></p>
-                            <p>⭐⭐⭐⭐☆ (120 reviews)</p>
+                        <div class="button-group">
+                            <button class="delete-btn">🗑</button>
+                            <button class="add-btn">Añadir al carrito</button>
                         </div>
-                        <div class="item">
-                            <div class="image-container">
-                                <img src="img/guccibag.png" alt="Quilted satin jacket">
-                                <button>🗑</button>
-                                <button>Añadir al carrito</button>
-                            </div>
-                            <p>Quilted satin jacket</p>
-                            <p><strong>$85</strong> <del>$100</del></p>
-                            <p>⭐⭐⭐⭐⭐ (200 reviews)</p>
+                        <div class="product-info">
+                            <h3 class="product-name">RGB liquid CPU cooler</h3>
+                            <p class="product-price">
+                                <strong>$1200</strong>
+                                <del>$1500</del>
+                            </p>
                         </div>
-                        <div class="item">
-                            <div class="image-container">
-                                <img src="img/guccibag.png" alt="GP11 Shooter USB gamepad">
-                                <button>🗑</button>
-                                <button>Añadir al carrito</button>
-                            </div>
-                            <p>GP11 Shooter USB gamepad</p>
-                            <p><strong>$40</strong> <del>$50</del></p>
-                            <p>⭐⭐⭐⭐☆ (120 reviews)</p>
+                    </li>
+                    <li class="product-card">
+                        <div class="image-container">
+                            <img src="img/smartwatch.png" alt="Smartwatch Fitness Pro">
                         </div>
-                        <div class="item">
-                            <div class="image-container">
-                                <img src="img/guccibag.png" alt="Quilted satin jacket">
-                                <button>🗑</button>
-                                <button>Añadir al carrito</button>
-                            </div>
-                            <p>Quilted satin jacket</p>
-                            <p><strong>$85</strong> <del>$100</del></p>
-                            <p>⭐⭐⭐⭐⭐ (200 reviews)</p>
+                        <div class="button-group">
+                            <button class="delete-btn">🗑</button>
+                            <button class="add-btn">Añadir al carrito</button>
                         </div>
-                    </div>
-                </section>
-            </body>
-            
+                        <div class="product-info">
+                            <h3 class="product-name">Smartwatch Fitness Pro</h3>
+                            <p class="product-price">
+                                <strong>$150</strong>
+                                <del>$200</del>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product-card">
+                        <div class="image-container">
+                            <img src="img/keyboard.png" alt="Teclado Mecánico RGB Gaming">
+                        </div>
+                        <div class="button-group">
+                            <button class="delete-btn">🗑</button>
+                            <button class="add-btn">Añadir al carrito</button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Teclado Mecánico RGB Gaming</h3>
+                            <p class="product-price">
+                                <strong>$175</strong>
+                                <del>$100</del>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product-card">
+                        <div class="image-container">
+                            <img src="img/producto-123-main.png" alt="Gorra Deportiva Premium">
+                        </div>
+                        <div class="button-group">
+                            <button class="delete-btn">🗑</button>
+                            <button class="add-btn">Añadir al carrito</button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Gorra Deportiva Premium</h3>
+                            <p class="product-price">
+                                <strong>$89.99</strong>
+                                <del>$129.99</del>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product-card">
+                        <div class="image-container">
+                            <img src="img/headphones.jpg" alt="Auriculares Inalámbricos NoiseCancel">
+                        </div>
+                        <div class="button-group">
+                            <button class="delete-btn">🗑</button>
+                            <button class="add-btn">Añadir al carrito</button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Auriculares Inalámbricos NoiseCancel</h3>
+                            <p class="product-price">
+                                <strong>$200</strong>
+                                <del>$250</del>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Recommended Section -->
+            <section class="recommended-section">
+                <div class="section-header">
+                    <h2>Solo para ti</h2>
+                    <button class="show-all">Mostrar todo</button>
+                </div>
+                <ul class="recommended-items">
+                    <!-- Repetir este bloque para cada producto -->
+                    <li class="product-card">
+                        <div class="image-container">
+                            <img src="img/controller.png" alt="GP11 Shooter USB gamepad">
+                        </div>
+                        <div class="button-group">
+                            <button class="delete-btn">🗑</button>
+                            <button class="add-btn">Añadir al carrito</button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">GP11 Shooter USB gamepad</h3>
+                            <p class="product-price">
+                                <strong>$40</strong>
+                                <del>$50</del>
+                            </p>
+                            <div class="product-rating">
+                                ⭐⭐⭐⭐☆ <span>(120 reviews)</span>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- ...otros elementos li... -->
+                    <li class="product-card">
+                        <div class="image-container">
+                            <img src="img/camara.png" alt="Cámara Mirrorless 4K">
+                        </div>
+                        <div class="button-group">
+                            <button class="delete-btn">🗑</button>
+                            <button class="add-btn">Añadir al carrito</button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Cámara Mirrorless 4K</h3>
+                            <p class="product-price">
+                                <strong>$650</strong>
+                                <del>$800</del>
+                            </p>
+                            <div class="product-rating">
+                                ⭐⭐⭐⭐☆ <span>(120 reviews)</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-card">
+                        <div class="image-container">
+                            <img src="img/bici.png" alt="Bicicleta Plegable Urbana">
+                        </div>
+                        <div class="button-group">
+                            <button class="delete-btn">🗑</button>
+                            <button class="add-btn">Añadir al carrito</button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Bicicleta Plegable Urbana</h3>
+                            <p class="product-price">
+                                <strong>$240</strong>
+                                <del>$300</del>
+                            </p>
+                            <div class="product-rating">
+                                ⭐⭐⭐⭐☆ <span>(120 reviews)</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-card">
+                        <div class="image-container">
+                            <img src="img/robot.jpg" alt="Robot Aspirador Inteligente">
+                        </div>
+                        <div class="button-group">
+                            <button class="delete-btn">🗑</button>
+                            <button class="add-btn">Añadir al carrito</button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Robot Aspirador Inteligente</h3>
+                            <p class="product-price">
+                                <strong>$280</strong>
+                                <del>$350</del>
+                            </p>
+                            <div class="product-rating">
+                                ⭐⭐⭐⭐☆ <span>(120 reviews)</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
         </section>
     </main>
 
-
     <footer class="footer">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, a itaque. Numquam nesciunt, magni
-            blanditiis, enim ducimus at harum suscipit veritatis ipsam quos nostrum aut ullam quod rem vel nisi!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
     </footer>
 </body>
-
 </html>

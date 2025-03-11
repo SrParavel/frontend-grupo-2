@@ -1,126 +1,156 @@
-
+/* Estilos generales */
 .main-section {
-    border: #032026 1px solid;
-    padding: 1rem;
+    padding: 2rem 0;
 }
 
-.main-section h2 {
-    color: #148C76;
-    font-size: 1rem;
+.section-header {
     display: flex;
-    gap: 1rem;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 1.5rem;
 }
 
-.main-section h2::before {
+.section-header h2 {
+    color: #148C76;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section-header h2::before {
     content: "";
+    display: block;
+    width: 0.5rem;
+    height: 2rem;
     background: #148C76;
     border-radius: 0.2rem;
-    width: 1rem;
-    height: 2.5rem;
 }
 
-.main-section h3 {
-    font-size: 1.5rem;
-}
-.try1{
+/* Listas de productos */
+.wishlist-items,
+.recommended-items {
     display: flex;
-}
-.main {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-}
-.wishlist-items, .recommended-items {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    border: 1px solid #e0e0e0; /* Borde gris claro */
+    border-radius: 0.5rem; /* Bordes redondeados */
 }
 
+.product-card {
+    min-width: 250px;
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Contenedor de imagen */
 .image-container {
     position: relative;
-    width: 50px;
-    height: 50px;
+    width: 100%;
+    height: 200px;
+    border-radius: 0.5rem;
     overflow: hidden;
+    margin-bottom: 0.5rem; /* Espacio entre la imagen y los botones */
 }
 
 .image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: opacity 0.3s ease-in-out;
 }
 
-.image-container:hover img {
-    opacity: 0;
+/* Botones debajo de la imagen */
+.button-group {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 0.5rem; /* Espacio entre los botones y la información del producto */
 }
 
-.image-container:hover::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('segunda.jpg') center/cover no-repeat;
-}
-
-.discount-label {
-    position: absolute;
-    top: 0.1rem;
-    right: 0.1rem;
-    background: #ff6b6b;
+.delete-btn,
+.add-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
     color: white;
-    padding: 0.2rem 0.4rem;
-    border-radius: 0.2rem;
-    font-size: 0.8rem;
 }
 
-.image-container button {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.7);
+.delete-btn {
+    background: #ff4757; /* Rojo para el botón de eliminar */
+}
+
+.delete-btn:hover {
+    background: #ff6b81; /* Rojo más claro al hacer hover */
+}
+
+.add-btn {
+    background: #148C76; /* Verde para el botón de añadir al carrito */
+}
+
+.add-btn:hover {
+    background: #1aa384; /* Verde más claro al hacer hover */
+}
+
+/* Información del producto */
+.product-info {
+    padding: 0 0.5rem;
+}
+
+.product-name {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #032026;
+}
+
+.product-price {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.product-price strong {
+    color: #148C76;
+    font-size: 1.2rem;
+}
+
+.product-price del {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.product-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ffd700;
+    font-size: 0.9rem;
+}
+
+/* Botones principales */
+.move-all,
+.show-all {
+    background: #148C76;
     color: white;
     border: none;
-    padding: 0.5rem;
-    cursor: pointer;
-    border-radius: 0.2rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.3rem;
+    transition: background 0.3s ease;
 }
 
-.image-container button:first-of-type {
-    top: 0.5rem;
-    right: 0.5rem;
-}
-
-.image-container button:last-of-type {
-    bottom: 0;
-    width: 100%;
-    background: black;
-    color: white;
-    padding: 0.7rem 0;
-}
-
-.image-container button:last-of-type:hover {
-    background: #148C76;
-}
-
-.price-discount {
-    color: red;
-    font-weight: bold;
-}
-
-.price-original {
-    color: gray;
-    text-decoration: line-through;
-}
-
-button {
-    background: white;
-    border: 1px solid black;
-    border-radius: 0.2rem;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #f5f5f5;
+.move-all:hover,
+.show-all:hover {
+    background: #0f6b58;
 }
