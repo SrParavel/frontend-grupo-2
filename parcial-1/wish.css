@@ -1,0 +1,156 @@
+/* Estilos generales */
+.main-section {
+    padding: 2rem 0;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.section-header h2 {
+    color: #148C76;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section-header h2::before {
+    content: "";
+    display: block;
+    width: 0.5rem;
+    height: 2rem;
+    background: #148C76;
+    border-radius: 0.2rem;
+}
+
+/* Listas de productos */
+.wishlist-items,
+.recommended-items {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    border: 1px solid #e0e0e0; /* Borde gris claro */
+    border-radius: 0.5rem; /* Bordes redondeados */
+}
+
+.product-card {
+    min-width: 250px;
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Contenedor de imagen */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-bottom: 0.5rem; /* Espacio entre la imagen y los botones */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Botones debajo de la imagen */
+.button-group {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 0.5rem; /* Espacio entre los botones y la información del producto */
+}
+
+.delete-btn,
+.add-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+    color: white;
+}
+
+.delete-btn {
+    background: #ff4757; /* Rojo para el botón de eliminar */
+}
+
+.delete-btn:hover {
+    background: #ff6b81; /* Rojo más claro al hacer hover */
+}
+
+.add-btn {
+    background: #148C76; /* Verde para el botón de añadir al carrito */
+}
+
+.add-btn:hover {
+    background: #1aa384; /* Verde más claro al hacer hover */
+}
+
+/* Información del producto */
+.product-info {
+    padding: 0 0.5rem;
+}
+
+.product-name {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #032026;
+}
+
+.product-price {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.product-price strong {
+    color: #148C76;
+    font-size: 1.2rem;
+}
+
+.product-price del {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.product-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ffd700;
+    font-size: 0.9rem;
+}
+
+/* Botones principales */
+.move-all,
+.show-all {
+    background: #148C76;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.3rem;
+    transition: background 0.3s ease;
+}
+
+.move-all:hover,
+.show-all:hover {
+    background: #0f6b58;
+}

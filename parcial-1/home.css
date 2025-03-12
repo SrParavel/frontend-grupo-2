@@ -1,0 +1,119 @@
+.home-hero {
+  color: var(--color-gray-50);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: var(--g-md);
+  padding: var(--p-lg);
+  background: url("assets/images/home-banner.jpg");
+  background-size: cover;
+  background-position: top center;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.home-hero h2 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.home-hero p {
+  font-size: large;
+  max-width: 42rem;
+}
+
+.featured-list,
+.products-list {
+  display: grid;
+  gap: var(--g-sm);
+}
+
+.featured-section,
+.products-section {
+  margin-top: var(--p-3xl);
+}
+
+#featured-man {
+  background: url("assets/images/featured-man.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+
+#featured-shoes {
+  background: url("assets/images/featured-shoes.jpg");
+  background-size: cover;
+  background-position: center left;
+}
+
+#featured-hat {
+  background: url("assets/images/featured-hat.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#featured-woman {
+  background: url("assets/images/featured-woman.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+
+#featured-collection {
+  background: url("assets/images/featured-collection.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+
+#product-shoes {
+  background: url("assets/products/shoes.jpg");
+  background-size: cover;
+  background-position: center 75%;
+}
+
+#product-jogger {
+  background: url("assets/products/jogger.jpg");
+  background-size: cover;
+  background-position: center 85%;
+}
+
+#product-jacket-1 {
+  background: url("assets/products/jacket-1.jpg");
+  background-size: cover;
+  background-position: 70% bottom;
+}
+
+#product-jacket-2 {
+  background: url("assets/products/jacket-2.jpg");
+  background-size: cover;
+  background-position: center bottom;
+}
+
+@media (width > 1024px) {
+  .featured-list,
+  .products-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  #featured-man {
+    grid-column: span 2;
+  }
+  #featured-woman {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  #featured-collection {
+    grid-column: span 4;
+    height: 600px;
+  }
+}
+
+@media (1024px > width > 768px) {
+  .featured-list,
+  .products-list {
+    grid-template-columns: 1fr 1fr;
+  }
+  #featured-collection {
+    grid-column: span 2;
+  }
+}
