@@ -4,11 +4,275 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wishlist</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="wish.css">
 </head>
 
 <body>
+    <section class="header-add">
+        <p>
+          Este verano aprovecha descuentos de <b>HASTA EL 50%</b> en todo el
+          catálogo!
+          <a href="">Comprar Ahora</a>
+        </p>
+    </section>
+      <!-- encabezado de la pagina -->
+    <header class="home-header">
+    <!-- barra de navegacion principal -->
+        <nav class="header-nav container">
+            <!-- logo (en este momento es solo texto) -->
+            <h1 class="logo">BA-K'NO</h1>
+            <!-- enlaces de navegacion -->
+            <ul class="nav-list">
+            <li>
+                <a class="nav-link nav-link-selected" href="index.html">Inicio</a>
+            </li>
+            <li>
+                <a class="nav-link" href="contact.html">Contacto</a>
+            </li>
+            <li>
+                <a class="nav-link" href="about.html">Nosotros</a>
+            </li>
+            </ul>
+        </nav>
+    </header>
 
+    <main class="main container">
+        <section class="main-section">
+            <!-- Wishlist Section -->
+            <section class="wishlist-section">
+                <div class="section-header">
+                    <h2>Wishlist (<span id="wishlist-count">6</span>)</h2>
+                    <button class="move-all">Mover todo al carrito</button>
+                </div>
+                <ul class="wishlist-items">
+                    <!-- Repetir este bloque para cada producto -->
+                    <li class="product-card">
+                        <div class="image-container">
+                            <img src="img/chamarra.jpeg" alt="Chamarra de mezclilla">
+                        </div>
+                        <div class="button-group">
+                            <button class="delete-btn">🗑</button>
+                            <button class="add-btn">Añadir al carrito</button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Chamarra de mezclilla</h3>
+                            <p class="product-price">
+                                <strong>$1200</strong>
+                                <del>$1500</del>
+                            </p>
+                        </div>
+                    </li>
+                    <!-- ...otros elementos li... -->
+                    <li class="product-card">
+                        <div class="image-container">
+                            <img src="img/buzo.jpg" alt="Buzo con capucha">
+                        </div>
+                        <div class="button-group">
+                            <button class="delete-btn">🗑</button>
+                            <button class="add-btn">Añadir al carrito</button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Buzo con capucha</h3>
+                            <p class="product-price">
+                                <strong>$1200</strong>
+                                <del>$1500</del>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product-card">
+                        <div class="image-container">
+                            <img src="img/jogger.png" alt="Pantalones jogger Kingsnake">
+                        </div>
+                        <div class="button-group">
+                            <button class="delete-btn">🗑</button>
+                            <button class="add-btn">Añadir al carrito</button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Pantalones jogger Kingsnake</h3>
+                            <p class="product-price">
+                                <strong>$150</strong>
+                                <del>$200</del>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product-card">
+                        <div class="image-container">
+                            <img src="img/chamarra2.jpg" alt="Chamarra Bomber S">
+                        </div>
+                        <div class="button-group">
+                            <button class="delete-btn">🗑</button>
+                            <button class="add-btn">Añadir al carrito</button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Chamarra Bomber S</h3>
+                            <p class="product-price">
+                                <strong>$175</strong>
+                                <del>$100</del>
+                            </p>
+                        </div>
+                    </li>
+                    
+                    <li class="product-card">
+                        <div class="image-container">
+                            <img src="img/buzo2.jpg" alt="Buzo Oversize Mujer">
+                        </div>
+                        <div class="button-group">
+                            <button class="delete-btn">🗑</button>
+                            <button class="add-btn">Añadir al carrito</button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Buzo Oversize Mujer</h3>
+                            <p class="product-price">
+                                <strong>$200</strong>
+                                <del>$250</del>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Recommended Section -->
+            <section class="recommended-section">
+                <div class="section-header">
+                    <h2>Solo para ti</h2>
+                    <button class="show-all">Mostrar todo</button>
+                </div>
+                <ul class="recommended-items">
+                    <!-- Repetir este bloque para cada producto -->
+                    <li class="product-card">
+                        <div class="image-container">
+                            <img src="img/top_mujer.jpg" alt="Gaterlen Crop Top Black">
+                        </div>
+                        <div class="button-group">
+                            <button class="delete-btn">🗑</button>
+                            <button class="add-btn">Añadir al carrito</button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Gaterlen Crop Top Black</h3>
+                            <p class="product-price">
+                                <strong>$40</strong>
+                                <del>$50</del>
+                            </p>
+                            <div class="product-rating">
+                                ⭐⭐⭐⭐☆ <span>(120 reviews)</span>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- ...otros elementos li... -->
+                    <li class="product-card">
+                        <div class="image-container">
+                            <img src="img/cargo_pants.jpg" alt="Parachute Pants">
+                        </div>
+                        <div class="button-group">
+                            <button class="delete-btn">🗑</button>
+                            <button class="add-btn">Añadir al carrito</button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Parachute Pants4K</h3>
+                            <p class="product-price">
+                                <strong>$650</strong>
+                                <del>$800</del>
+                            </p>
+                            <div class="product-rating">
+                                ⭐⭐⭐⭐☆ <span>(120 reviews)</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-card">
+                        <div class="image-container">
+                            <img src="img/cargo_jeans.jpeg" alt="Cargo Jean">
+                        </div>
+                        <div class="button-group">
+                            <button class="delete-btn">🗑</button>
+                            <button class="add-btn">Añadir al carrito</button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Cargo Jean</h3>
+                            <p class="product-price">
+                                <strong>$240</strong>
+                                <del>$300</del>
+                            </p>
+                            <div class="product-rating">
+                                ⭐⭐⭐⭐☆ <span>(120 reviews)</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-card">
+                        <div class="image-container">
+                            <img src="img/bandana.jpeg" alt="Bandana Streetwear">
+                        </div>
+                        <div class="button-group">
+                            <button class="delete-btn">🗑</button>
+                            <button class="add-btn">Añadir al carrito</button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Bandana Streetwear</h3>
+                            <p class="product-price">
+                                <strong>$280</strong>
+                                <del>$350</del>
+                            </p>
+                            <div class="product-rating">
+                                ⭐⭐⭐⭐☆ <span>(120 reviews)</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-card">
+                        <div class="image-container">
+                            <img src="img/cadena_chunky.jpeg" alt="Cadena Chunky Charms">
+                        </div>
+                        <div class="button-group">
+                            <button class="delete-btn">🗑</button>
+                            <button class="add-btn">Añadir al carrito</button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Cadena Chunky Charms</h3>
+                            <p class="product-price">
+                                <strong>$280</strong>
+                                <del>$350</del>
+                            </p>
+                            <div class="product-rating">
+                                ⭐⭐⭐⭐☆ <span>(120 reviews)</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="footer-nav container">
+          <section class="footer-section">
+            <h3>Categorías</h3>
+            <ul>
+              <li><a href="#">Hombres</a></li>
+              <li><a href="#">Mujeres</a></li>
+              <li><a href="#">Calzado</a></li>
+              <li><a href="#">Accesorios</a></li>
+              <li><a href="#">Novedades</a></li>
+            </ul>
+          </section>
+          <section class="footer-section">
+            <h3>Contacto</h3>
+            <p>Email: contacto@bakno.com</p>
+            <p>Tel: +57 123 456 7890</p>
+            <p>Dirección: Calle 123, Barranquilla</p>
+          </section>
+          <section class="footer-section">
+            <h3>Síguenos</h3>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">TikTok</a></li>
+            </ul>
+          </section>
+        </nav>
+        <section class="footer-bottom">
+          <p>&copy; 2025 BA-K'NO. Todos los derechos reservados.</p>
+        </section>
+      </footer>
+  
 </body>
-
 </html>
